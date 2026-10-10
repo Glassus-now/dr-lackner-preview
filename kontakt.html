@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Univ.Prof. Dr. Birgit Lackner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-heading text-center" data-de="Ordinationen & Kontakt" data-en="Practices & Contact" data-ru="Клиники и контакты">Ordinationen & Kontakt</h2>
+                <div class="gold-divider mx-auto"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3 class="location-title" data-de="Ordination Wien" data-en="Vienna Practice" data-ru="Клиника в Вене">Ordination Wien</h3>
+                    <div class="location-details">
+                        <p><strong>Adresse:</strong> Freyung 6 / II. Hof / Stiege 9 / EG, 1010 Wien</p>
+                        <p><strong>Telefon:</strong> +43 1 997 27 92</p>
+                        <p><strong>Telefax:</strong> +43 1 997 27 92 92</p>
+                        <p><strong>E-Mail:</strong> birgit.lackner@meduniwien.ac.at</p>
+                        <p><strong data-de="Zeiten:" data-en="Hours:" data-ru="Часы приема:">Zeiten:</strong> <span data-de="Termine nach Vereinbarung" data-en="By appointment only" data-ru="Прием по предварительной записи">Termine nach Vereinbarung</span></p>
+                    </div>
+                    <a href="https://patient.latido.at/booking/select/profileid=62e8e99734f6a412400ba099;coredataid=62e8e992bf8372de5c780a62" target="_blank" rel="noopener" class="btn btn-dark btn-full mt-4" data-de="Online Termin buchen Wien" data-en="Book Appointment Vienna" data-ru="Записаться Вена">Online Termin buchen Wien</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3 class="location-title" data-de="Ordination Ebreichsdorf" data-en="Ebreichsdorf Practice" data-ru="Клиника в Эбрайхсдорфе">Ordination Ebreichsdorf</h3>
+                    <div class="location-details">
+                        <p><strong>Adresse:</strong> Hauptplatz 19, 2483 Ebreichsdorf</p>
+                        <p><strong>Telefon:</strong> +43 676 505 05 80</p>
+                        <p><strong>E-Mail:</strong> birgit.lackner@meduniwien.ac.at</p>
+                        <p><strong data-de="Zeiten:" data-en="Hours:" data-ru="Часы приема:">Zeiten:</strong> <span data-de="Termine nach Vereinbarung" data-en="By appointment only" data-ru="Прием по предварительной записи">Termine nach Vereinbarung</span></p>
+                    </div>
+                    <a href="https://patient.latido.at/booking/select/profileid=62e8e99734f6a412400ba099;coredataid=62e8eb1fcb6a883924b9e2ff" target="_blank" rel="noopener" class="btn btn-dark btn-full mt-4" data-de="Online Termin buchen Ebreichsdorf" data-en="Book Appointment Ebreichsdorf" data-ru="Записаться Эбрайхсдорф">Online Termin buchen Ebreichsdorf</a>
+                </div>
+            </div>
+
+            <div class="booking-card mt-5">
+                <h3 class="card-title" data-de="Universitätsaugenklinik AKH Wien" data-en="University Eye Clinic AKH Vienna" data-ru="Университетская офтальмологическая клиника AKH Вена">Universitätsaugenklinik AKH Wien</h3>
+                <p class="body-text mt-2"><strong data-de="Abteilung:" data-en="Department:" data-ru="Отделение:">Abteilung:</strong> <span data-de="Okuloplastische Chirurgie" data-en="Oculoplastic Surgery" data-ru="Окулопластическая хирургия">Okuloplastische Chirurgie</span></p>
+                <p class="body-text"><strong data-de="Adresse:" data-en="Address:" data-ru="Адрес:">Adresse:</strong> Währinger Gürtel 18–20, 1090 Wien</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

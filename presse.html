@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presse - Univ.Prof. Dr. Birgit Lackner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-heading" data-de="Presse & Medienberichte" data-en="Press & Media" data-ru="Пресса и публикации">Presse & Medienberichte</h2>
+            <div class="gold-divider"></div>
+            
+            <p class="lead-text" data-de="Auszug aus Medienberichten und Auszeichnungen von Univ.Prof. Dr. Birgit Lackner:" data-en="Excerpt of media reports and recognition for Univ.Prof. Dr. Birgit Lackner:" data-ru="Выдержка из публикаций в СМИ и наград проф. д-ра Биргит Лакнер:">Auszug aus Medienberichten und Auszeichnungen von Univ.Prof. Dr. Birgit Lackner:</p>
+
+            <div class="services-grid mt-4">
+                <div class="service-card">
+                    <span class="badge" data-de="NEWS Wahl" data-en="NEWS Poll" data-ru="Рейтинг NEWS">NEWS Wahl</span>
+                    <h3 class="service-title mt-2" data-de="Österreichs beste Ärzte" data-en="Austria's Best Doctors" data-ru="Лучшие врачи Австрии">Österreichs beste Ärzte</h3>
+                    <p class="service-text mt-2">
+                        <em data-de="„Birgit Lackner. Augenärztin. Die Netzhaut-Expertin. Das Leistungsspektrum der Wiener Medizinerin reicht von der Tumorentfernung bis zur Behandlung akuter und chronischer Augen-Erkrankungen.“"
+                            data-en="“Birgit Lackner. Ophthalmologist. The retina expert. The range of services provided by the Vienna-based physician ranges from tumor removal to the treatment of acute and chronic eye diseases.”"
+                            data-ru="«Биргит Лакнер. Офтальмолог. Эксперт по сетчатке. Спектр услуг венского врача варьируется от удаления опухолей до лечения острых и хронических заболеваний глаз.»">
+                            „Birgit Lackner. Augenärztin. Die Netzhaut-Expertin. Das Leistungsspektrum der Wiener Medizinerin reicht von der Tumorentfernung bis zur Behandlung akuter und chronischer Augen-Erkrankungen.“
+                        </em>
+                    </p>
+                    <p class="card-subtitle mt-2" data-de="NEWS Magazin" data-en="NEWS Magazine" data-ru="Журнал NEWS">NEWS Magazin</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="badge" data-de="FORMAT Magazin" data-en="FORMAT Magazine" data-ru="Журнал FORMAT">FORMAT Magazin</span>
+                    <h3 class="service-title mt-2" data-de="Spezialisten für Augengesundheit" data-en="Specialists for Eye Health" data-ru="Специалисты по здоровью глаз">Spezialisten für Augengesundheit</h3>
+                    <p class="service-text mt-2" data-de="Fachliche Anerkennung und Porträt über chirurgische Schwerpunkte in der Okuloplastik und Tumorentfernung." data-en="Professional recognition and profile focusing on surgical specialization in oculoplastics and tumor removal." data-ru="Признание экспертов и портрет, посвященный хирургической специализации в окулопластике и удалении опухолей.">Fachliche Anerkennung und Porträt über chirurgische Schwerpunkte in der Okuloplastik und Tumorentfernung.</p>
+                    <p class="card-subtitle mt-2" data-de="FORMAT Ausgabe" data-en="FORMAT Edition" data-ru="Выпуск FORMAT">FORMAT Ausgabe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

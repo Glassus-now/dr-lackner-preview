@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univ.Prof. Dr. Birgit Lackner - Fachärztin für Augenheilkunde & Optometrie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Hero Banner Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-banner">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80" alt="Augenheilkunde Impressionen" class="hero-img">
+            <div class="hero-overlay"></div>
+            <div class="hero-text-container">
+                <span class="hero-title" data-de="Elegante Vorsorge & Augenheilkunde" data-en="Elegant Care & Ophthalmology" data-ru="Элегантная профилактика и офтальмология">Elegante Vorsorge & Augenheilkunde</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section with Two Latido Buttons -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-card">
+                    <div>
+                        <h3 class="card-title" data-de="Ordination Wien" data-en="Vienna Practice" data-ru="Клиника в Вене">Ordination Wien</h3>
+                        <p class="card-subtitle">Freyung 6 / II. Hof / Stiege 9 / EG, 1010 Wien</p>
+                    </div>
+                    <a href="https://patient.latido.at/booking/select/profileid=62e8e99734f6a412400ba099;coredataid=62e8e992bf8372de5c780a62" target="_blank" rel="noopener" class="btn btn-dark btn-full mt-4" data-de="Termin buchen Wien" data-en="Book Appointment Vienna" data-ru="Записаться Вена">Termin buchen Wien</a>
+                </div>
+
+                <div class="booking-card">
+                    <div>
+                        <h3 class="card-title" data-de="Ordination Ebreichsdorf" data-en="Ebreichsdorf Practice" data-ru="Клиника в Эбрайхсдорфе">Ordination Ebreichsdorf</h3>
+                        <p class="card-subtitle">Hauptplatz 19, 2483 Ebreichsdorf</p>
+                    </div>
+                    <a href="https://patient.latido.at/booking/select/profileid=62e8e99734f6a412400ba099;coredataid=62e8eb1fcb6a883924b9e2ff" target="_blank" rel="noopener" class="btn btn-dark btn-full mt-4" data-de="Termin buchen Ebreichsdorf" data-en="Book Appointment Ebreichsdorf" data-ru="Записаться Эбрайхсдорф">Termin buchen Ebreichsdorf</a>
+                </div>
+
+                <div class="lastminute-card">
+                    <div>
+                        <span class="badge" data-de="Aktuell" data-en="News" data-ru="Новости">Aktuell</span>
+                        <h3 class="card-title mt-2" data-de="Last Minute & Warteliste" data-en="Last Minute & Waitlist" data-ru="Срочные приемы и лист ожидания">Last Minute & Warteliste</h3>
+                        <p class="card-subtitle mt-1" data-de="Kurzfristig verfügbare Termine, Infos zu Urlauben & Anmeldung zur Latido-Warteliste." data-en="Short-notice appointments, vacation info & Latido waitlist registration." data-ru="Свободные приемы, информация об отпусках и запись в лист ожидания Latido.">Kurzfristig verfügbare Termine, Infos zu Urlauben & Anmeldung zur Latido-Warteliste.</p>
+                    </div>
+                    <a href="https://patient.latido.at/" target="_blank" rel="noopener" class="btn btn-outline btn-full mt-4" data-de="Zur Latido Warteliste" data-en="To Latido Waitlist" data-ru="В лист ожидания Latido">Zur Latido Warteliste</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dr. Birgit Lackner" class="about-img">
+                </div>
+                <div>
+                    <h2 class="section-heading" data-de="Herzlich Willkommen" data-en="Welcome" data-ru="Добро пожаловать">Herzlich Willkommen</h2>
+                    <div class="gold-divider"></div>
+                    <p class="lead-text" data-de="Eine Beeinträchtigung des Sehvermögens bedeutet für die Betroffenen immer auch einen Eingriff in deren Lebensqualität." data-en="Impaired vision always affects a person's quality of life." data-ru="Ухудшение зрения всегда снижает качество жизни человека.">Eine Beeinträchtigung des Sehvermögens bedeutet für die Betroffenen immer auch einen Eingriff in deren Lebensqualität.</p>
+                    <p class="body-text" data-de="Regelmäßige Vorsorge und eine sorgsame Behandlung sind die wesentlichen Bausteine, um Ihre Sehkraft bis ins hohe Alter zu erhalten. Ich unterstütze Sie gerne dabei." data-en="Regular check-ups and careful treatment are essential to preserve your eyesight into old age. I am happy to support you." data-ru="Регулярная профилактика и заботливое лечение — ключевые факторы для сохранения зрения до глубокой старости. Буду рада помочь вам.">Regelmäßige Vorsorge und eine sorgsame Behandlung sind die wesentlichen Bausteine, um Ihre Sehkraft bis ins hohe Alter zu erhalten. Ich unterstütze Sie gerne dabei.</p>
+                    
+                    <div class="cv-links mt-4">
+                        <a href="dr-lackner.html" class="btn btn-outline" data-de="Mehr über Dr. Lackner" data-en="More about Dr. Lackner" data-ru="О докторе Лакнер">Mehr über Dr. Lackner</a>
+                        <a href="wissenschaft.html" class="btn btn-outline" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" class="btn btn-outline" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

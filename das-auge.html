@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Auge - Univ.Prof. Dr. Birgit Lackner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="surgery-section">
+        <div class="container">
+            <h2 class="section-heading" data-de="Anatomie & Funktion des Auges" data-en="Anatomy & Function of the Eye" data-ru="Анатомия и функция глаза">Anatomie & Funktion des Auges</h2>
+            <div class="gold-divider"></div>
+
+            <p class="lead-text" data-de="Das menschliche Auge ist ein hochkomplexes Sinnesorgan, das Lichtimpulse aufnimmt und verarbeitet." data-en="The human eye is a highly complex sensory organ that receives and processes light impulses." data-ru="Человеческий глаз — это сложнейший орган чувств, воспринимающий и обрабатывающий световые импульсы.">Das menschliche Auge ist ein hochkomplexes Sinnesorgan, das Lichtimpulse aufnimmt und verarbeitet.</p>
+
+            <div class="services-grid mt-4">
+                <div class="service-card">
+                    <h3 class="service-title" data-de="Hornhaut & Linse" data-en="Cornea & Lens" data-ru="Роговица и хрусталик">Hornhaut & Linse</h3>
+                    <p class="service-text" data-de="Fokussieren das einfallende Licht exakt auf die Netzhaut. Veränderungen führen zu Fehlsichtigkeiten oder Grauem Star." data-en="Focus incoming light precisely onto the retina. Changes lead to refractive errors or cataracts." data-ru="Фокусируют падающий свет точно на сетчатку. Изменения приводят к нарушениям рефракции или катаракте.">Fokussieren das einfallende Licht exakt auf die Netzhaut. Veränderungen führen zu Fehlsichtigkeiten oder Grauem Star.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title" data-de="Netzhaut & Makula" data-en="Retina & Macula" data-ru="Сетчатка и макула">Netzhaut & Makula</h3>
+                    <p class="service-text" data-de="Die Makula ist der Punkt des schärfsten Sehens. Vorsorge hilft, Erkrankungen wie Makuladegeneration frühzeitig zu behandeln." data-en="The macula is the point of sharpest vision. Preventive care helps treat conditions like macular degeneration early." data-ru="Макула — точка наивысшей остроты зрения. Профилактика помогает вовремя обнаружить и лечить дистрофию макулы.">Die Makula ist der Punkt des schärfsten Sehens. Vorsorge hilft, Erkrankungen wie Makuladegeneration frühzeitig zu behandeln.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title" data-de="Lider & Tränenwege" data-en="Eyelids & Lacrimal System" data-ru="Веки и слезные пути">Lider & Tränenwege</h3>
+                    <p class="service-text" data-de="Schützen das Auge vor Fremdkörpern und sichern die kontinuierliche Befeuchtung der Augenoberfläche." data-en="Protect the eye from foreign objects and ensure continuous moistening of the eye surface." data-ru="Защищают глаз от инородных тел и обеспечивают постоянное увлажнение глазной поверхности.">Schützen das Auge vor Fremdkörpern und sichern die kontinuierliche Befeuchtung der Augenoberfläche.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

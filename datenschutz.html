@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Univ.Prof. Dr. Birgit Lackner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section" style="padding: 5rem 0;">
+        <div class="container">
+            <h2 class="section-heading" data-de="Datenschutzerklärung" data-en="Privacy Policy" data-ru="Политика конфиденциальности">Datenschutzerklärung</h2>
+            <div class="gold-divider"></div>
+
+            <div class="booking-card mb-5">
+                <h3 class="card-title" data-de="1. Datenschutz auf einen Blick" data-en="1. Privacy at a Glance" data-ru="1. Обзор конфиденциальности">1. Datenschutz auf einen Blick</h3>
+                <p class="body-text mt-2" data-de="Der Schutz Ihrer persönlichen Daten ist uns ein großes Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung." data-en="The protection of your personal data is very important to us. We treat your personal data confidentially and in accordance with statutory data protection regulations." data-ru="Защита ваших персональных данных очень важна для нас.">Der Schutz Ihrer persönlichen Daten ist uns ein großes Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften (DSGVO) sowie dieser Datenschutzerklärung.</p>
+            </div>
+
+            <div class="booking-card mb-5">
+                <h3 class="card-title" data-de="2. Verantwortliche Stelle" data-en="2. Responsible Party" data-ru="2. Ответственное лицо">2. Verantwortliche Stelle</h3>
+                <p class="body-text mt-2"><strong>Univ.Prof. Dr. Birgit Lackner</strong></p>
+                <p class="body-text">Fachärztin für Augenheilkunde und Optometrie</p>
+                <p class="body-text">Freyung 6 / II. Hof / Stiege 9 / EG, 1010 Wien</p>
+                <p class="body-text">E-Mail: birgit.lackner@meduniwien.ac.at</p>
+            </div>
+
+            <div class="booking-card mb-5">
+                <h3 class="card-title" data-de="3. Online-Terminvereinbarung (Latido)" data-en="3. Online Booking (Latido)" data-ru="3. Онлайн-запись (Latido)">3. Online-Terminvereinbarung (Latido)</h3>
+                <p class="body-text mt-2" data-de="Für die Online-Terminvereinbarung nutzen wir das System der Firma LATIDO. Wenn Sie über unsere Website einen Termin buchen, werden die von Ihnen eingegebenen Daten zur Abwicklung des Termins an LATIDO übermittelt. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche Maßnahmen)." data-en="For online appointments, we use the LATIDO system. Data entered is transmitted to LATIDO for appointment processing." data-ru="Для онлайн-записи мы используем систему LATIDO.">Für die Online-Terminvereinbarung nutzen wir das System der Firma LATIDO. Wenn Sie über unsere Website einen Termin buchen, werden die von Ihnen eingegebenen Daten zur Abwicklung des Termins an LATIDO übermittelt.</p>
+            </div>
+
+            <div class="booking-card">
+                <h3 class="card-title" data-de="4. Ihre Rechte" data-en="4. Your Rights" data-ru="4. Ваши права">4. Ihre Rechte</h3>
+                <p class="body-text mt-2" data-de="Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Aufsichtsbehörde beschweren (in Österreich ist dies die Datenschutzbehörde)." data-en="You have the right to information, correction, deletion, restriction, data portability, revocation, and objection." data-ru="Вы имеете право на доступ, исправление, удаление и ограничение обработки ваших данных.">Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

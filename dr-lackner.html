@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lackner - Univ.Prof. Dr. Birgit Lackner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-heading" data-de="Univ.Prof. Dr. Birgit Lackner" data-en="Univ.Prof. Dr. Birgit Lackner" data-ru="Проф. д-р Биргит Лакнер">Univ.Prof. Dr. Birgit Lackner</h2>
+            <div class="gold-divider"></div>
+
+            <div class="about-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dr. Birgit Lackner" class="about-img">
+                </div>
+                <div>
+                    <p class="lead-text" data-de="Spezialistin für Augenheilkunde, Okuloplastische Chirurgie und feinchirurgische Eingriffe." data-en="Specialist in ophthalmology, oculoplastic surgery, and microsurgical procedures." data-ru="Специалист по офтальмологии, окулопластической хирургии и микрохирургии.">Spezialistin für Augenheilkunde, Okuloplastische Chirurgie und feinchirurgische Eingriffe.</p>
+                    <p class="body-text" data-de="Nach langjähriger klinischer und wissenschaftlicher Tätigkeit als Oberärztin an der Universitätsklinik für Augenheilkunde (AKH Wien) betreue ich meine Patientinnen und Patienten in meinen Ordinationen in Wien und Ebreichsdorf." data-en="After many years of clinical and scientific work as a senior physician at the Department of Ophthalmology (AKH Vienna), I treat my patients at my practices in Vienna and Ebreichsdorf." data-ru="После многолетней клинической и научной работы в качестве старшего врача в Университетской офтальмологической клинике (AKH Wien) я принимаю пациентов в своих частных клиниках в Вене и Эбрайхсдорфе.">Nach langjähriger klinischer und wissenschaftlicher Tätigkeit als Oberärztin an der Universitätsklinik für Augenheilkunde (AKH Wien) betreue ich meine Patientinnen und Patienten in meinen Ordinationen in Wien und Ebreichsdorf.</p>
+                    
+                    <div class="cv-links mt-4">
+                        <a href="wissenschaft.html" class="btn btn-outline" data-de="Wissenschaft & Publikationen" data-en="Science & Publications" data-ru="Наука и публикации">Wissenschaft & Publikationen</a>
+                        <a href="mitgliedschaften.html" class="btn btn-outline" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" class="btn btn-outline" data-de="Presseberichte" data-en="Press Reports" data-ru="Публикации в прессе">Presseberichte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirurgie - Univ.Prof. Dr. Birgit Lackner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="surgery-section" style="padding: 5rem 0;">
+        <div class="container">
+            <h2 class="section-heading" data-de="Operatives Leistungsspektrum" data-en="Surgical Range of Services" data-ru="Спектр хирургических услуг">Operatives Leistungsspektrum</h2>
+            <div class="gold-divider"></div>
+            
+            <p class="lead-text" data-de="Diverse Operationsmethoden ermöglichen die Behandlung organischer oder funktioneller Erkrankungen des Auges sowie die Korrektur von Fehlsichtigkeiten." data-en="Various surgical methods enable the treatment of organic or functional eye conditions as well as vision correction." data-ru="Различные методы хирургии позволяют лечить органические и функциональные заболевания глаз, а также коррегировать нарушения зрения.">Diverse Operationsmethoden ermöglichen die Behandlung organischer oder funktioneller Erkrankungen des Auges sowie die Korrektur von Fehlsichtigkeiten.</p>
+
+            <div class="services-grid mt-4">
+                <div class="service-card">
+                    <h3 class="service-title" data-de="Katarakt-Operation" data-en="Cataract Surgery" data-ru="Операция при катаракте">Katarakt-Operation</h3>
+                    <p class="service-text mt-2" data-de="Behandlung des Grauen Stars durch präzisen Austausch der getrübten Augenlinse gegen moderne Kunstlinsen." data-en="Cataract treatment via precise replacement of the clouded lens with advanced artificial lenses." data-ru="Лечение катаракты путем точной замены помутневшего хрусталика на современную интраокулярную линзу.">Behandlung des Grauen Stars durch präzisen Austausch der getrübten Augenlinse gegen moderne Kunstlinsen.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title" data-de="Tränenwegschirurgie" data-en="Lacrimal Surgery" data-ru="Хирургия слезных путей">Tränenwegschirurgie</h3>
+                    <p class="service-text mt-2" data-de="Korrektur von Verengungen und Blockaden des Tränenabflusssystems zur Behebung von chronischem Tränenfluss." data-en="Correction of narrowing and blockages in the tear drainage system to resolve chronic tearing." data-ru="Устранение сужений и непроходимости слезоотводящих путей для лечения хронического слезотечения.">Korrektur von Verengungen und Blockaden des Tränenabflusssystems zur Behebung von chronischem Tränenfluss.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title" data-de="Lidchirurgie & Tumorentfernung" data-en="Eyelid Surgery & Tumor Removal" data-ru="Хирургия век и удаление опухолей">Lidchirurgie & Tumorentfernung</h3>
+                    <p class="service-text mt-2" data-de="Okuloplastische Eingriffe bei Lidfehlstellungen (Entropium, Ektropium) sowie schonende Entfernung von Lid- und Hauttumoren (z. B. Basalzellkarzinome)." data-en="Oculoplastic procedures for eyelid malpositions (entropion, ectropion) and gentle removal of eyelid tumors (e.g., basal cell carcinoma)." data-ru="Окулопластические операции при завороте/вывороте век, а также бережное удаление опухолей век и кожи.">Okuloplastische Eingriffe bei Lidfehlstellungen (Entropium, Ektropium) sowie schonende Entfernung von Lid- und Hauttumoren (z. B. Basalzellkarzinome).</p>
+                </div>
+            </div>
+
+            <div class="booking-card mt-5">
+                <h3 class="card-title" data-de="Patienteninformationen & Vorbereitung" data-en="Patient Information & Preparation" data-ru="Информация для пациентов">Patienteninformationen & Vorbereitung</h3>
+                <p class="body-text mt-2" data-de="Wichtige Hinweise zum Ablauf chirurgischer Eingriffe, Nachsorge und Anatomie des Auges." data-en="Important information regarding surgical procedures, post-operative care, and eye anatomy." data-ru="Важная информация о ходе операций, послеоперационном уходе и анатомии глаза.">Wichtige Hinweise zum Ablauf chirurgischer Eingriffe, Nachsorge und Anatomie des Auges.</p>
+                <a href="das-auge.html" class="btn btn-dark mt-4" data-de="Zu den Patienteninfos (Das Auge)" data-en="To Patient Info (The Eye)" data-ru="Информация о глазе">Zu den Patienteninfos (Das Auge)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

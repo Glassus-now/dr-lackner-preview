@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leistungen - Univ.Prof. Dr. Birgit Lackner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Language Bar -->
+    <div class="lang-bar">
+        <div class="container lang-container">
+            <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+            <span>|</span>
+            <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+            <span>|</span>
+            <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand">
+                <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+            </a>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+                <!-- Dropdown Dr. Lackner -->
+                <div class="nav-dropdown">
+                    <a href="dr-lackner.html" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                    <div class="dropdown-menu">
+                        <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                        <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                        <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                    </div>
+                </div>
+
+                <a href="leistungen.html" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+                <!-- Dropdown Chirurgie -->
+                <div class="nav-dropdown">
+                    <a href="chirurgie.html" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                    <div class="dropdown-menu">
+                        <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="services-section" style="background-color: #ffffff; padding: 5rem 0;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-heading text-center" data-de="Medizinische Leistungen" data-en="Medical Services" data-ru="Медицинские услуги">Medizinische Leistungen</h2>
+                <div class="gold-divider mx-auto"></div>
+                <p class="section-subheading" data-de="Das Auge ist das meistgenutzte Sinnesorgan des modernen Menschen – rund 80 % unserer Umweltinformationen nehmen wir über das Auge auf." data-en="The eye is the most utilized sensory organ – about 80% of environmental information is perceived through the eyes." data-ru="Глаз — самый важный орган чувств современного человека, через который мы получаем около 80% информации об окружающем мире.">Das Auge ist das meistgenutzte Sinnesorgan des modernen Menschen – rund 80 % unserer Umweltinformationen nehmen wir über das Auge auf.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title" data-de="Früherkennung & Beratung" data-en="Early Detection & Consultation" data-ru="Ранняя диагностика и консультация">Früherkennung & Beratung</h3>
+                    <p class="service-text" data-de="Früherkennung von Sehstörungen, Kontrolle des Augeninnendrucks (Glaukom-Vorsorge) und spaltlampenmikroskopische Untersuchung der vorderen und hinteren Augenabschnitte." data-en="Early detection of vision disorders, intraocular pressure checks (glaucoma screening), and slit-lamp examination of anterior and posterior eye segments." data-ru="Раннее выявление нарушений зрения, контроль внутриглазного давления и биомикроскопия переднего и заднего отрезка глаза.">Früherkennung von Sehstörungen, Kontrolle des Augeninnendrucks (Glaukom-Vorsorge) und spaltlampenmikroskopische Untersuchung der vorderen und hinteren Augenabschnitte.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title" data-de="Behandlung" data-en="Treatment" data-ru="Лечение">Behandlung</h3>
+                    <p class="service-text" data-de="Umfassendes Spektrum von entzündlichen Augenerkrankungen über das Trockene Auge (Sicca-Syndrom) bis hin zur Diagnostik und Therapie bei Makulaerkrankungen." data-en="Comprehensive treatment from inflammatory eye conditions and Dry Eye Syndrome to diagnostics and therapy for macular diseases." data-ru="Полный спектр лечения: от воспалительных заболеваний и синдрома сухого глаза до диагностики и терапии заболеваний макулы.">Umfassendes Spektrum von entzündlichen Augenerkrankungen über das Trockene Auge (Sicca-Syndrom) bis hin zur Diagnostik und Therapie bei Makulaerkrankungen.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title" data-de="Chirurgie" data-en="Surgery" data-ru="Хирургия">Chirurgie</h3>
+                    <p class="service-text" data-de="Spezialisierung auf Kataraktoperationen, okuloplastische Eingriffe an den Lidern, Rekonstruktion der Tränenwege sowie schonende Tumorentfernungen." data-en="Specialized in cataract procedures, oculoplastic eyelid surgery, lacrimal reconstruction, and gentle tumor removals." data-ru="Специализация на операциях при катаракте, окулопластике век, реконструкции слезных путей и удалении опухолей.">Spezialisierung auf Kataraktoperationen, okuloplastische Eingriffe an den Lidern, Rekonstruktion der Tränenwege sowie schonende Tumorentfernungen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; Univ.Prof. Dr. Birgit Lackner. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved." data-ru="Все права защищены.">Alle Rechte vorbehalten.</span></p>
+            <div class="footer-links">
+                <a href="impressum.html" data-de="Impressum" data-en="Imprint" data-ru="Выходные данные">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy" data-ru="Конфиденциальность">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

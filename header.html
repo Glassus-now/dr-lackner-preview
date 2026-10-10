@@ -1,0 +1,45 @@
+<!-- Top Language Bar -->
+<div class="lang-bar">
+    <div class="container lang-container">
+        <button id="lang-de" class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+        <span>|</span>
+        <button id="lang-en" class="lang-btn" onclick="switchLanguage('en')">ENG</button>
+        <span>|</span>
+        <button id="lang-ru" class="lang-btn" onclick="switchLanguage('ru')">РУС</button>
+    </div>
+</div>
+
+<!-- Header Navigation -->
+<header class="main-header">
+    <div class="container header-container">
+        <a href="index.html" class="brand">
+            <img src="AugenLogo_SchwarzWeiss.png" alt="Univ.Prof. Dr. Birgit Lackner" class="logo-img">
+        </a>
+        
+        <nav class="main-nav">
+            <a href="index.html" id="nav-index" data-de="Home" data-en="Home" data-ru="Главная">Home</a>
+
+            <!-- Dropdown Dr. Lackner -->
+            <div class="nav-dropdown">
+                <a href="dr-lackner.html" id="nav-dr-lackner" class="dropdown-toggle" data-de="Dr. Lackner »" data-en="Dr. Lackner »" data-ru="Д-р Лакнер »">Dr. Lackner »</a>
+                <div class="dropdown-menu">
+                    <a href="wissenschaft.html" data-de="Wissenschaft" data-en="Science" data-ru="Наука">Wissenschaft</a>
+                    <a href="mitgliedschaften.html" data-de="Mitgliedschaften" data-en="Memberships" data-ru="Членство">Mitgliedschaften</a>
+                    <a href="presse.html" data-de="Presse" data-en="Press" data-ru="Пресса">Presse</a>
+                </div>
+            </div>
+
+            <a href="leistungen.html" id="nav-leistungen" data-de="Leistungen" data-en="Services" data-ru="Услуги">Leistungen</a>
+
+            <!-- Dropdown Chirurgie -->
+            <div class="nav-dropdown">
+                <a href="chirurgie.html" id="nav-chirurgie" class="dropdown-toggle" data-de="Chirurgie »" data-en="Surgery »" data-ru="Хирургия »">Chirurgie »</a>
+                <div class="dropdown-menu">
+                    <a href="das-auge.html" data-de="Das Auge" data-en="The Eye" data-ru="Глаз">Das Auge</a>
+                </div>
+            </div>
+
+            <a href="kontakt.html" id="nav-kontakt" data-de="Kontakt" data-en="Contact" data-ru="Контакты">Kontakt</a>
+        </nav>
+    </div>
+</header>
